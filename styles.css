@@ -1,0 +1,91 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set base font styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Center all content */
+.splash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #007bff;
+}
+
+.splash-content {
+    text-align: center;
+    color: #fff;
+    max-width: 600px;
+    padding: 2rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.splash-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.splash-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00468c;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    padding: 1rem 0;
+}
+
+.footer-content {
+    margin-top: 1rem;
+}
+
+.help-doc-button {
+    background-color: #28a745;
+}
+
+.help-doc-button:hover {
+    background-color: #218838;
+}
